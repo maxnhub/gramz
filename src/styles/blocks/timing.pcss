@@ -1,0 +1,52 @@
+
+.timing {
+    &__title {
+        color: #151515;
+        font-family: "Museo Sans Cyrl 900";
+        font-size: 250px;
+        position: relative;
+        @include tablets {
+            font-size: 180px;
+        }
+        &-text {
+            font-family: "Museo Sans Cyrl 700";
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            color: #fff;
+        }
+    } 
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 200px;
+        @include tablets {
+            grid-gap: 50px;
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        &-number {
+            color: #6e6e6e;
+            font-family: "Museo Sans Cyrl 100";
+            font-size: 13px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        &-stage {
+            font-family: "Museo Sans Cyrl 700";
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+        &-days {
+            color: #6e6e6e;
+            font-family: "Museo Sans Cyrl -300";
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}

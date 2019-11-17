@@ -120,6 +120,11 @@ module.exports = (env, argv) => {
                 filename: "admin/index.html",
                 chunks: ["admin"]
             }),
+            new webpack.ProvidePlugin({
+                $: 'jquery',
+                jQuery: 'jquery',
+                'window.jQuery': 'jquery'
+            }),
             new SpriteLoaderPlugin({ plainSprite: true }),
             new VueLoaderPlugin()
         ],

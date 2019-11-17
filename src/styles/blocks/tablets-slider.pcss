@@ -1,0 +1,67 @@
+.tablets-slider {
+    
+    &__list {
+        display: flex;
+        padding-left: 436px;
+        width: 300%;
+        position: relative;
+        @include desktop {
+            padding-left: 20%;
+        }
+        @include tablets {
+            padding-left: 15%;
+        }
+        @include phones {
+            padding-left: 10%;
+        }
+
+        & .owl-nav {
+            display: none;
+        }
+        
+        & .owl-dots, & .owl-dots.disabled {
+            display: none;
+            @include phones {
+                display: block;
+                position: absolute;
+                bottom: -25px;
+                left: 13%;
+            }
+            & .owl-dot {
+                border-radius: 50%;
+                width: 4px;
+                height: 4px;
+                background-color: #252525;
+                margin-right: 25px;
+                &.active {
+                    background-color: #fff;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &__item {
+        margin-right: 300px;
+        display: flex;
+        &:last-child {
+            margin-right: 0;
+        }
+        @include phones {
+            display: block;
+        }
+    }
+    &__image {
+        
+    }
+}
+
+.tablets-slider__item-block {
+    height: 551px;
+    width: auto;
+    @include phones {
+        width: 292px;
+        height: 222px;
+    }
+}

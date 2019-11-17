@@ -1,0 +1,61 @@
+.section {
+    &--specialists {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 182px;
+        @include tablets {
+            padding: 0 50px;
+        }
+        @include phones {
+            padding: 0 15px;
+        }
+    }
+    &--visual {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 241px;
+        @include phones {
+            margin-bottom: 25px;
+        }
+    }
+    &--mobile-slider {
+        margin-bottom: 260px;
+        @include phones {
+            margin-bottom: 80px;
+        }
+    }
+    &--models {
+        position: relative;
+        height: 893px;
+        margin-bottom: 343px;
+        @include phones {
+            margin-bottom: 113px;
+            height: 296px;
+        }
+    }
+    &--tablets-slider {
+        margin-bottom: 284px;
+        @include phones {
+            margin-bottom: 100px;
+        }
+    }
+    &--feedback {
+        padding: 0 191px;
+        margin-bottom: 240px;
+        @include tablets {
+            padding: 0;
+        }
+        @include phones {
+            margin-bottom: 90px;
+        }
+    }
+    &--people {
+        padding: 100px 50px;
+    }
+    &--timing {
+        padding: 100px 50px;
+    }
+
+}

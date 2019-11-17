@@ -1,0 +1,65 @@
+.models {
+    &__field {
+        position: absolute;
+        top: 0;
+        left: -158px;
+        display: flex;
+        @include desktop {
+            left: -120px;
+        }
+        @include phones {
+            left: 0;
+        }
+        &-item {
+            display: grid;
+            grid-template-areas: "one three"
+            "two three";
+            grid-gap: 71px;
+            margin-right: 71px;
+            @include phones {
+                grid-gap: 25px;
+            }
+            &--one {
+                @include phones {
+                    display: none;
+                }
+            }
+            &--one .models__field-item-model--two .models__image {
+                margin-left: auto;
+            }
+            &--two .models__field-item-model--three .models__image {
+                height: 100%;
+                min-width: 100%;
+                max-width: none;
+            }
+            &-model {
+                &--one {
+                    grid-area: one;
+                    width: 277px;
+                    height: 415px;
+                }
+                &--two {
+                    grid-area: two;
+                    width: 277px;
+                    height: 415px;
+                }
+                &--three {
+                    grid-area: three;
+                    width: 595px;
+                    height: 893px;
+                    @include phones {
+                        width: 296px;
+                        height: 296px;
+                    }
+                }
+                &--one, &--two {
+                    @include phones {
+                        width: 5.75rem;
+                        height: 8.5625rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

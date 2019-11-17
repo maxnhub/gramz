@@ -6,10 +6,95 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title Portfolio | main page
+    link(rel="stylesheet" href="../src/scripts/owl-carousel/assets/owl.carousel.min.css")
+    link(rel="stylesheet" href="../src/scripts/owl-carousel/assets/owl.theme.default.css")
+    title Gramz portfolio | main page
   body
     .wrapper
       .maincontent
-        +image('content/user.jpg', 'user-pic')
-        +icon('link', 'link-class')
-        .icon-bg
+        header.header
+          .header__logo
+            a.header__link(href="https://raregramz.ru")
+              +icon("logo", "header__icon")
+              p.header__text raregramz.ru
+        section.section--about
+          .about
+            .container
+              .about__mission В проекте Rare Gramz перед нами стояла задача запустить сайт нового бренда до открытия бутика в гостинице «Астория».
+              ul.about__desc
+                li.about__desc-item
+                  .about__desc-item-title Клиент
+                  .about__desc-item-text Rare Gramz — премиум бутик одежды в самом центре Санкт-Петербурга. Миссия компании —дарить самому редкому, что нам доверила природа, совершенную жизнь в руках человека.
+                li.about__desc-item
+                  .about__desc-item-title Задача
+                  .about__desc-item-text Перед нами стояла задача в самые короткие сроки разработать интересную, стильную и современную страницу.
+        section.section--specialists
+          +image("content/imac-pro.png", "specialists__image")
+          .container
+            ul.specialists__desc
+              li.specialists__desc-item
+                p.specialists__desc-item-title Рабочих дней
+                p.specialists__desc-item-number 20
+                p.specialists__desc-item-desc Мы потратили на разработку сайта, включая все этапы работы.
+                a.specialists__desc-item-button(href="../src/pages/timing.html")
+              li.specialists__desc-item
+                p.specialists__desc-item-title Специалистов
+                p.specialists__desc-item-number 8
+                p.specialists__desc-item-desc Нашей команды учавствовали в разработке сайта.
+                a.specialists__desc-item-button(href="../src/pages/people.html")
+        .section.section--visual
+          .container
+            +image("content/index.png", "visual__image")
+        section.section--mobile-slider
+          ul.mobile-slider__list.owl-carousel(id="carousel-mobile")
+            li.mobile-slider__item
+              .mobile-slider__item-block
+                +image("content/iphone1.png", "mobile-slider__image")
+            li.mobile-slider__item
+              .mobile-slider__item-block
+                +image("content/iphone2.png", "mobile-slider__image")
+            li.mobile-slider__item
+              .mobile-slider__item-block
+                +image("content/iphone3.png", "mobile-slider__image")
+            li.mobile-slider__item
+              .mobile-slider__item-block
+                +image("content/iphone4.png", "mobile-slider__image")
+        section.section--models
+          ul.models__field
+            li.models__field-item.models__field-item--one
+              .models__field-item-model.models__field-item-model--one
+                +image("content/model5.png", "models__image")
+              .models__field-item-model.models__field-item-model--two
+                +image("content/model.png", "models__image")
+              .models__field-item-model.models__field-item-model--three
+                +image("content/model4.png", "models__image")
+            li.models__field-item.models__field-item--two
+              .models__field-item-model.models__field-item-model--one
+                +image("content/model2.png", "models__image")
+              .models__field-item-model.models__field-item-model--two
+                +image("content/model3.png", "models__image")
+              .models__field-item-model.models__field-item-model--three
+                +image("content/model6.png", "models__image")
+        section.section--tablets-slider
+          ul.tablets-slider__list.owl-carousel(id="carousel-tablets")
+            li.tablets-slider__item
+              .tablets-slider__item-block
+                +image("content/ipad1.png", "tablets-slider__image")
+            li.tablets-slider__item
+              .tablets-slider__item-block
+                +image("content/ipad2.png", "tablets-slider__image")
+            li.tablets-slider__item
+              .tablets-slider__item-block
+                +image("content/ipad3.png", "tablets-slider__image")
+        section.section--feedback
+          .container.container--feedback
+            .feedback__field
+              p.feedback__field-text Свяжитесь с нами, и мы поможем решить ваши задачи или проконсультируем.
+              button.feedback__field-button(type="button") Связаться
+        footer.footer
+          a.footer__link(href="#")
+            p.footer__link-text Следующий проект
+
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+

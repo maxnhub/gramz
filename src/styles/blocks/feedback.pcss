@@ -1,0 +1,37 @@
+.feedback__field {
+    background: #151515;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 300px;
+
+    @include desktop {
+        padding: 120px 150px;
+    }
+    @include phones {
+        padding: 50px 40px;
+    }
+    &-text {
+        font-family: "Museo Sans Cyrl 500";
+        font-size: 30px;
+        margin-bottom: 40px;
+        text-align: center;
+        @include phones {
+            font-size: 18px;
+        }
+    }
+    & .feedback__field-button {
+        width: 189px;
+        height: 58px;
+        border-radius: 32px;
+        background-color: #000000;
+        text-align: center;
+        vertical-align: center;
+        color: $text-color;
+        @include phones {
+            font-size: 14px;
+            width: 136px;
+            height: 55px;
+        }
+    }
+}

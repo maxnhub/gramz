@@ -1,29 +1,20 @@
-# Учебный шаблон проекта Portfolio
+# Тестовая страница
 
-> Перед установкой зависимостей и запуском проекта убедитесь, что у вас установлена [последняя версия Node.js & NPM](https://nodejs.org/en/download/current/), а так же 
-[последняя версия Yarn](https://yarnpkg.com/ru/docs/install)
+##  For "Gramz"
 
-##  Чтобы развернуть проект необходимо:
 ```sh
-$ git clone git@github.com:loftschool/ls-advanced-portfolio.git
-$ cd ls-advanced-portfolio
-$ yarn
+ Web-разработчик: Никульников Максим
+ Ссылка: https://maxnhub.github.io/gramz/
 ```
 
-## Скрипты package.json:
+#### How to install and build my app
 
-| Скрипт | Назначение |
-| ------ | ------ |
-| dev | Запустит webpack-dev-server с _горячей_ заменой модулей |
-| build | Соберет проект для **production** (проект готов к загрузке на сервер) |
-| reg | Консольная утилита для регистрации. Использовать перед началом работы над **админ-панелью**. |
-
-#### Чтобы запустить скрипт:
 ```sh
-$ npm run имя_скрипта
+1. git clone git@github.com:maxnhub/gramz.git
+2. cd gramz
+3. npm i
+4. npm run build
 ```
 
-##### Либо:
-```sh
-$ yarn имя_скрипта
-```
+
+

@@ -1,0 +1,83 @@
+.specialists__desc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 108px;
+  @include tablets {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 75px;
+  }
+  @include phones {
+    grid-template-columns: 1fr;
+    grid-gap: 75px;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      font-family: "Museo Sans Cyrl 100";
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      @include phones {
+        font-size: 11px;
+        letter-spacing: 1.27px;
+      }
+    }
+
+    &-number {
+      color: #151515;
+      font-family: "Museo Sans Cyrl 900";
+      font-size: 64px;
+      @include phones {
+        font-size: 64px;
+      }
+    }
+    
+    &-desc {
+      font-family: "Museo Sans Cyrl -300";
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 25px;
+      @include phones {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+}
+
+.specialists__image {
+  margin-bottom: 100px;
+}
+
+.specialists__desc-item .specialists__desc-item-button {
+  width: 45px;
+  height: 45px;
+  background-color: #151515;
+  border-radius: 50%;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 39%;
+  }
+  &:before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 39%;
+    transform: rotate(90deg);
+  }
+}

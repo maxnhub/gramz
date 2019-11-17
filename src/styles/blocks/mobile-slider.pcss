@@ -1,0 +1,112 @@
+.mobile-slider {
+    
+    &__list {
+        display: flex;
+        padding-left: 40%;
+        width: 300%;
+        position: relative;
+        @include desktop {
+            padding-left: 40%;
+        }
+        @include phones {
+            padding-left: 30%;
+        }
+
+        & .owl-nav {
+            position: absolute;
+            top: 0;
+            left: 5%;
+            @include tablets {
+                display: none;
+            }
+        }
+
+        & .owl-prev {
+            display: none;
+        }
+        
+        & .owl-next {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            outline: none;
+            & span {
+                visibility: hidden;
+            }
+            &:before {     
+                content: "";
+                width: 50px;
+                height: 50px;
+                border-left: 1px solid #232323;
+                border-bottom: 1px solid #232323;
+                transform-origin: 0 100%;
+                transform: rotate(-135deg);
+                position: absolute;
+                top: 30%;
+                left: 40%;
+            }
+            &:hover {
+                & .owl-next:before {
+                    border-left: 1px solid #fff;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+        
+        & .owl-dots {
+            display: none;
+            @include phones {
+                display: block;
+                position: absolute;
+                bottom: -25px;
+                left: 13%;
+            }
+            & .owl-dot {
+                border-radius: 50%;
+                width: 4px;
+                height: 4px;
+                background-color: #252525;
+                margin-right: 25px;
+                &.active {
+                    background-color: #fff;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        & .owl-item .mobile-slider__image {
+            @include tablets {
+                width: auto;
+            }
+        }
+    }
+    &__item {
+        margin-right: 300px;
+        display: flex;
+        &:last-child {
+            margin-right: 0;
+        }
+        @include phones {
+            display: block;
+        }
+    }
+    &__image {
+
+    }
+}
+
+.mobile-slider__item-block {
+    height: 791px;
+    width: auto;
+    @include tablets {
+        height: 350px;
+    }
+    @include phones {
+        width: 151px;
+        height: 309px;
+    }
+}
+
+
+
