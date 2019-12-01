@@ -6,3 +6,4 @@ if (process.env.NODE_ENV === "development") {
 import "./scripts/jquery-3.4.1.min";
 import "./scripts/owl-carousel/owl.carousel.min";
 import "./scripts/owl-carousel";
+import "./scripts/popup";

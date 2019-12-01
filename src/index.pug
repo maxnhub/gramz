@@ -36,13 +36,67 @@ html(lang="en")
                 p.specialists__desc-item-title Рабочих дней
                 p.specialists__desc-item-number 20
                 p.specialists__desc-item-desc Мы потратили на разработку сайта, включая все этапы работы.
-                a.specialists__desc-item-button(href="timing.html")
+                a.specialists__desc-item-button.specialists__desc-item-button--timeline(href="#")
               li.specialists__desc-item
                 p.specialists__desc-item-title Специалистов
                 p.specialists__desc-item-number 8
                 p.specialists__desc-item-desc Нашей команды учавствовали в разработке сайта.
-                a.specialists__desc-item-button(href="people.html")
-        .section.section--visual
+                a.specialists__desc-item-button.specialists__desc-item-button--people(href="#")
+        section.section--timing.popup.popup--timing
+          h1.timing__title Timeline 
+            span.timing__title-text Этапы проекта
+          ul.timing__list
+            li.timing__item
+              p.timing__item-number 1 Этап
+              p.timing__item-stage Сбор информации, аналитика
+              p.timing__item-days 3 дня
+            li.timing__item
+              p.timing__item-number 2 Этап
+              p.timing__item-stage Создание дизайн-концепции
+              p.timing__item-days 5 дней
+                    li.timing__item 
+                        p.timing__item-number 3 Этап
+                        p.timing__item-stage Front-end разработка
+                        p.timing__item-days 20 дней
+                    li.timing__item 
+                        p.timing__item-number 4 Этап
+                        p.timing__item-stage Back-end разработка
+                        
+                        p.timing__item-days 25 дней
+                    li.timing__item 
+                        p.timing__item-number 5 Этап 
+                        p.timing__item-stage Тестовое наполнение сайта
+                        p.timing__item-days 3 дня
+                    li.timing__item 
+                        p.timing__item-number 6 Этап 
+                        p.timing__item-stage Тестирование
+                        p.timing__item-days 3 дня
+        section.section--people.popup.popup--people
+          h1.people__title Team
+            span.people__title-text Над проектом работали
+          ul.people__list 
+              li.people__item 
+                  p.people__item-position Консультант
+                  p.people__item-name Илья
+              li.people__item 
+                  p.people__item-position Менеджеры проекта
+                  p.people__item-name Майя, Любовь
+              li.people__item 
+                  p.people__item-position Арт-директор, дизайнер
+                  p.people__item-name Илья
+              li.people__item 
+                  p.people__item-position Контент-менеджер
+                  p.people__item-name Анна
+              li.people__item 
+                  p.people__item-position Front-end разработчик
+                  p.people__item-name Александр
+              li.people__item 
+                  p.people__item-position Back-end разработчик
+                  p.people__item-name Игорь
+              li.people__item 
+                  p.people__item-position Тестировщик
+                  p.people__item-name Любава               
+        section.section--visual
           .container
             +image("content/index.png", "visual__image")
         section.section--mobile-slider
